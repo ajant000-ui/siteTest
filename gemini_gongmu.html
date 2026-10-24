@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인사교류</title>
+    <style>
+        :root {
+            --primary-color: #1a56db;
+            --primary-dark: #1e40af;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --border-color: #e2e8f0;
+            --quote-bg: #f1f5f9;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border: 1px solid var(--border-color);
+        }
+
+        header {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        .category-tag {
+            display: inline-block;
+            background-color: #dbeafe;
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 0.875rem;
+            padding: 4px 12px;
+            border-radius: 9999px;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-size: 1.85rem;
+            color: var(--text-main);
+            line-height: 1.35;
+            word-break: keep-all;
+        }
+
+        .intro-text {
+            font-size: 1.05rem;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+            background-color: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            color: var(--primary-dark);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-bottom: 16px;
+        }
+
+        /* 목록 스타일링 (ol, ul) */
+        ol.main-list {
+            padding-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        ol.main-list > li {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: var(--text-main);
+        }
+
+        ul.sub-list {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-top: 6px;
+            font-weight: normal;
+        }
+
+        ul.sub-list > li {
+            font-size: 0.975rem;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+        }
+
+        .highlight-text {
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+
+        /* blockquote 강조 스타일링 */
+        blockquote {
+            background-color: var(--quote-bg);
+            border-left: 5px solid var(--primary-color);
+            padding: 20px 24px;
+            margin: 32px 0;
+            border-radius: 0 8px 8px 0;
+            position: relative;
+        }
+
+        blockquote p {
+            font-style: italic;
+            font-size: 1.05rem;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        blockquote footer {
+            margin-top: 12px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--primary-color);
+            text-align: right;
+            font-style: normal;
+        }
+
+        footer.page-footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            color: #94a3b8;
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- 상단 헤더 / 보도자료 H1 -->
+        <header>
+            <span class="category-tag">행정안전부 보도자료</span>
+            <h1>공무원 인사교류 활성화 및 채용제도 개선 입법예고</h1>
+        </header>
+
+        <!-- 보도자료 주요 개요 -->
+        <div class="intro-text">
+            <p>
+                행정안전부(장관 윤호중)는 중앙부처·지방정부·민간기업 간 벽을 허무는 '프로젝트 기반 인사교류' 활성화를 위해 교류 참여자에게 파격적인 인사 혜택을 제공하는 내용의 「지방공무원 임용령」·「지방공무원 평정규칙」 개정안을 5월 11일(월)부터 6월 10일(화)까지 입법예고한다고 밝혔다.
+            </p>
+        </div>
+
+        <!-- 1. 인사 인센티브 섹션 -->
+        <section id="incentive">
+            <h2>1. 인사 인센티브</h2>
+            <ol class="main-list">
+                <li>
+                    승진 소요 연수 단축
+                    <ul class="sub-list">
+                        <li>핵심 인사교류 직위 또는 민간기업 전담공무원으로 근무할 경우, 해당 직위 교류 기간의 절반을 <span class="highlight-text">최대 1년 범위 내</span>에서 승진 소요 연수에서 감면</li>
+                    </ul>
+                </li>
+                <li>
+                    특별승진 기회 부여
+                    <ul class="sub-list">
+                        <li>해당 직위에서 <span class="highlight-text">1년 이상 근무</span>하며 우수한 성과를 낸 공무원에게 특별승진 기회 부여</li>
+                    </ul>
+                </li>
+                <li>
+                    대우공무원 혜택 확대
+                    <ul class="sub-list">
+                        <li>민간기업 전담공무원에게도 대우공무원 산정 시 교류 기간 경력 100% 단축 혜택 동일 적용</li>
+                    </ul>
+                </li>
+                <li>
+                    평가·성과급 보장
+                    <ul class="sub-list">
+                        <li>근무성적평정 최소 <span class="highlight-text">'우' 등급</span>, 성과급 최소 <span class="highlight-text">'A' 등급</span> 의무 보장</li>
+                        <li>최상위 등급 우수 성과자에게 특별성과가산금 지급 근거 마련</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <!-- 2. 채용제도 개선 섹션 -->
+        <section id="recruitment">
+            <h2>2. 채용제도 개선</h2>
+            <ol class="main-list">
+                <li>
+                    8급 한국사 과목 대체
+                    <ul class="sub-list">
+                        <li>2027년부터 8급 공채 한국사 과목을 <span class="highlight-text">'한국사능력검정시험(3급 이상)'</span>으로 대체</li>
+                    </ul>
+                </li>
+                <li>
+                    경력 단축 및 직급 확대
+                    <ul class="sub-list">
+                        <li>특정 분야 경채시험 필요 경력 1년 범위 내 단축</li>
+                        <li>우수 인재 추천채용제 대상 직급을 <span class="highlight-text">7급까지 확대</span></li>
+                    </ul>
+                </li>
+                <li>
+                    취약 청년 공직 진출 지원
+                    <ul class="sub-list">
+                        <li>9급 공채 저소득층 구분모집 대상에 '자립준비청년'과 '보호기간 연장청년' 신규 추가</li>
+                        <li>기초생활수급자·한부모가족 지원 대상자 자격 유지 기간을 <span class="highlight-text">2년에서 1년으로 완화</span></li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <!-- 장관 인용구 (blockquote) -->
+        <section id="quote">
+            <blockquote>
+                <p>
+                    "이번 조치는 프로젝트 기반 인사교류를 통해 대규모 국책사업 등에 참여하는 공무원에게 파격적인 인센티브를 부여해 보다 성공적인 사업 추진을 돕기 위한 것"이라며, "앞으로도 공직사회의 개방성을 확대하고 활력을 제고할 수 있도록 지방인사제도를 적극적으로 개선해 나가겠다"
+                </p>
+                <footer>- 윤호중 행정안전부 장관</footer>
+            </blockquote>
+        </section>
+
+        <!-- 하단 푸터 -->
+        <footer class="page-footer">
+            <p>&copy; 행정안전부 지방인사제도과. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
